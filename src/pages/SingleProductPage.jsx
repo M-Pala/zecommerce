@@ -28,7 +28,6 @@ const SingleProductPage = () => {
     // eslint-disable-next-line
   }, [error])
 
-  console.log(product);
 
   if(loading){
     return <Loading/>

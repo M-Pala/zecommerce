@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const ProductImages = ({images=[]}) => {
     const [main, setMain] = useState(images[0])
-    console.log(images);
+
   return (
     <Wrapper>
         <img src={main?.url} alt="main img" className='main' />

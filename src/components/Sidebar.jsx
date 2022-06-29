@@ -17,7 +17,7 @@ const Sidebar = () => {
     <SidebarContainer>
       <aside className={`${isSidebarOpen ? 'sidebar show-sidebar':'sidebar'}`}>
         <div className="sidebar-header">
-          <img src={logo} className='logo' alt="zecommerce" />
+        <h3>Zecommerce</h3>
           <button className='close-btn' type='button' onClick={closeSidebar}>
             <FaTimes/>
           </button>
@@ -47,6 +47,9 @@ const Sidebar = () => {
 
 const SidebarContainer = styled.div`
   text-align: center;
+  h3{
+    color:var(--clr-primary-5)
+  }
   .sidebar-header {
     display: flex;
     justify-content: space-between;
